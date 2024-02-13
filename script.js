@@ -105,8 +105,15 @@ const firstMonth = firstHolidayTimestamp.getMonth;
 const lastDay = lastHolidayTimestamp.getDate;
 const lastMonth = lastHolidayTimestamp.getMonth;
 
-console.log(`${firstDay}/${firstMonth}/${currentYear}`)
-console.log({lastDay}/{lastMonth}/{currentYear})
+console.log(`${firstDay}/${firstMonth}/${currentYear+6}`);
+console.log(`${lastDay}/${lastMonth}/${currentYear+6}`);
 
-/*const randomHoliday = holidays[Math.random()]
-console.log(randomHoliday)*/
+const randomHoliday = holidays.Math.random()*(to.getTime() - from.getTime())
+console.log(Math.random(randomHoliday));
+
+/*function generateRandomDate(from, to) {
+  return new Date(
+    from.getTime() +
+      Math.random() * (to.getTime() - from.getTime()),
+  );
+};*/
