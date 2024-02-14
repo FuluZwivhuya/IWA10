@@ -78,7 +78,7 @@ console.log("Name change:",(holidays[christmas].name) != copied.name && copied.n
 console.log( "Date change:",holidays[christmas].date != copied.date && copied.date);
 
 const firstHolidayTimestamp = Math.min (
-    //holidays[0].date.getTime,
+    //holidays[0].date.getTime(),
     holidays[1].date.getTime(),
     holidays[2].date.getTime(),
     holidays[3].date.getTime(),
@@ -89,7 +89,7 @@ const firstHolidayTimestamp = Math.min (
     holidays[8].date.getTime(),
 )
 const lastHolidayTimestamp = Math.max(
-    //holidays[0].date.getTime,
+    //holidays[0].date.getTime(),
     holidays[1].date.getTime(),
     holidays[2].date.getTime(),
     holidays[3].date.getTime(),
@@ -100,13 +100,17 @@ const lastHolidayTimestamp = Math.max(
     holidays[8].date.getTime(),
 )
 
-const firstDay = firstHolidayTimestamp.getDate;
-const firstMonth = firstHolidayTimestamp.getMonth;
+
+//const firstDay = firstHolidayTimestamp.getDate();
+const date = new Date();
+const firstDate = firstHolidayTimestamp["date"];
+console.log(firstHolidayTimestamp[date])
+const firstMonth = firstHolidayTimestamp.getMonth();
 const lastDay = lastHolidayTimestamp.getDate;
 const lastMonth = lastHolidayTimestamp.getMonth;
 
 console.log(`${firstDay}/${firstMonth}/${currentYear+6}`);
-console.log(`${lastDay}/${lastMonth}/${currentYear+6}`);
+//console.log(`${lastDay}/${lastMonth}/${currentYear+6}`);
 
 const randomHoliday = holidays.Math.random()*(to.getTime() - from.getTime())
 console.log(Math.random(randomHoliday));
